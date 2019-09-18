@@ -1,0 +1,14 @@
+name: 'devtools check package'
+description: 'Runs devtools::check() on the package in the directory'
+author: 'Bioconductor'
+inputs: 
+  name:
+    description: 'Package name'
+    required: false
+  path:
+    description: 'Directory of package'
+    required: false
+runs:
+  using: 'bioconductor/bioconductor_full'
+  main: 'Rscript -e "install.packages(\"devtools\"); devtools::check()'
+
