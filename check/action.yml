@@ -9,6 +9,6 @@ inputs:
     description: 'Directory of package'
     required: false
 runs:
-  using: 'bioconductor/bioconductor_full'
+  using: 'bioconductor/bioconductor_full:devel'
   main: 'Rscript -e "install.packages(\"devtools\"); devtools::check()"'
 
