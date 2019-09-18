@@ -10,5 +10,5 @@ inputs:
     required: false
 runs:
   using: 'bioconductor/bioconductor_full'
-  main: 'Rscript -e "install.packages(\"devtools\"); devtools::check()'
+  main: 'Rscript -e "install.packages(\"devtools\"); devtools::check()"'
 
